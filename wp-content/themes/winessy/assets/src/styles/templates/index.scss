@@ -1,0 +1,199 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 72px;
+    box-shadow: 0px 0px 15px rgba(173, 173, 189, 0.3);
+
+    .logo-img {
+        margin: 24px 0 0 40px;
+        height: 24px;
+    }
+
+    menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 261px;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+
+        .act a {
+            &:hover {
+                text-shadow: none;
+                font-weight: 700;
+            } 
+        }
+
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            height: 100%;
+            margin-right: 40px;
+            
+            a {
+                display: inline-block; 
+                text-align: center;
+                position: relative; 
+        
+                &:hover {
+                    text-shadow: .7px 0 0 #232935;
+                }
+                
+            }
+            
+            .active {
+                font-weight: 700;
+    
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 3px;
+                    top: 45px;
+                    left: 0;
+                    background: #FF4A3D;
+                    border-radius: 5px 5px 0px 0px;
+                }
+            }
+        } 
+    }
+}
+
+.post-date {
+    color: rgba(35, 41, 53, 0.5);
+    font-size: 16px;
+}
+
+.blog {
+
+    .title{
+        font-weight: 700;
+        font-size: 24px;
+        margin: 0 0 20px 20px;
+    }
+
+    a {
+        color: black;
+
+        &:hover {
+            text-decoration: none;
+            transition: all .3s;
+            color: #FF4A3D;
+        }
+    }
+
+    .blog-colum {
+        width: 835px;
+
+        
+        .artical {
+            margin-bottom: 65px;
+
+            .artical-text-prev {
+                font-size: 16px;
+                margin: 0 20px;
+                position: relative;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 795px;
+                    height: 1px;
+                    left: 0;
+                    bottom: -85px;
+                    background: rgba(177, 186, 209, 0.3);
+                }
+            }
+
+            
+
+            .arrow {
+                position: relative;
+                display: block;
+                width: 39px;
+                height: 35px;
+                margin: 20px;
+                background-image: url(../../../images/icon/arrow-gray.svg);
+                
+
+                &:hover {
+                    background-image: url(../../../images/icon/arrow-red.png);
+                }
+            }
+        }
+
+        .artical-img {
+            width: 835px;
+            height: 380px;
+            background-color: #B1BAD14D;
+            border-radius: 15px;
+        }
+        .artical-title {
+            font-size: 24px;
+            margin: 40px 0 20px 20px;
+        }
+        .artical-atribute {
+            margin: 0 0 40px 20px;
+            
+
+            
+            .img {
+                margin-left: 20px;
+            }
+            .lable {
+                margin-left: 9px;
+                font-size: 16px;
+                color: #FF4A3D;
+            }
+        }
+    }
+
+    .nav-colum {
+        width: 265px;
+
+        .list-lable {
+            box-sizing: border-box;
+            width: 265px;
+            border: 1px solid rgba(177, 186, 209, 0.3);
+            border-radius: 15px;
+            margin-bottom: 40px;
+
+            .lable {
+                padding: 20px;
+            }
+        }
+        .new-post {
+            margin-bottom: 45px;
+
+            .wrap {
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+            }
+            .icon-prev {
+                height: 24px;
+                width: 24px;
+                margin-right: 15px;
+            }
+            .post-date {
+                margin: 10px 0 0 58px;
+                position: relative;
+    
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 265px;
+                    height: 1px;
+                    left: -40px;
+                    bottom: -25px;
+                    background: rgba(177, 186, 209, 0.3);
+                }
+            }
+        }
+    }
+}

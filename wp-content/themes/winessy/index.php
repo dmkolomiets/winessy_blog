@@ -4,7 +4,7 @@
         <div class="container">
         <div class="page__content">
             <div class="blog-colum">
-                <div class="title">Blog</div>
+                <div class="title">Blog1</div>
 
 
                 <?php

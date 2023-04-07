@@ -4,14 +4,11 @@
         <div class="container">
         <div class="page__content">
             <div class="blog-colum">
-                <div class="title">Blog1</div>
+                <div class="title">Blog</div>
 
 
                 <?php
                     // параметры по умолчанию
-
-                    
-                    
                     $my_posts = get_posts( array(
                         'numberposts' => 10,
                         'orderby'     => 'date',

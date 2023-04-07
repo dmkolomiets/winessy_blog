@@ -38,7 +38,8 @@ function do_excerpt($string, $word_limit) {
 //     if ( $total > 1 ) echo '</nav>';
 //   }
 
-  
+add_image_size( 'theme-preview', 300, 200, true );
+
 
 ?>
 

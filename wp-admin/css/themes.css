@@ -582,9 +582,10 @@ body.folded .theme-browser ~ .theme-overlay .theme-wrap {
 .theme-overlay .screenshot img {
 	height: auto;
 	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
 }
 /* Handles old 300px screenshots */
 .theme-overlay.small-screenshot .theme-screenshots {
